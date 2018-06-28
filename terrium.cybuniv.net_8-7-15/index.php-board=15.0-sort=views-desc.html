@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script>
+    $(document).ready(function() {
+        // jBar Script by Todd Motto
+        $('.downbar').delay(1000).fadeIn(400).addClass('up', 600);
+        $('.jquery-bar').hide().delay(250).slideDown(400);
+        $('.jquery-arrow').click(function(){
+            $('.downbar').toggleClass('up', 400);          
+            $('.jquery-bar').slideToggle();
+        });     
+    });
+</script>
+
+	<link rel="stylesheet" type="text/css" href="../cybuniv.net/terrium/Themes/terrium/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="http://cybuniv.net/terrium/Themes/terrium/css/index_carbon.css?fin20" />
+	<script type="text/javascript" src="Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../cybuniv.net/terrium/Themes/terrium/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://cybuniv.net/terrium/Themes/terrium";
+		var smf_default_theme_url = "http://terrium.cybuniv.net/Themes/default";
+		var smf_images_url = "http://cybuniv.net/terrium/Themes/terrium/images";
+		var smf_scripturl = "http://terrium.cybuniv.net/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Development" />
+	<meta name="keywords" content="terrium, mars, explorer, 3d, multiplayer, game, buggy, hovercraft, tank, jet, world, exploration, laser, tag, capture, flag, racing, teamspeak" />
+	<title>Development</title>
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="index.php-board=15.0.html" />
+	<link rel="help" href="index.php-action=help.html" />
+	<link rel="search" href="index.php-action=search.html" />
+	<link rel="contents" href="index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Terrium — Free Multiplayer 3D Fun - RSS" href="index.php-type=rss-action=.xml.rss" />
+	<link rel="index" href="index.php-board=15.0.html" />
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 980px
+		}
+	</style>
+	
+	<!-- Google Analytics -->
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-47304488-1', 'cybuniv.net');
+	  ga('send', 'pageview');
+
+	</script>
+	
+</head>
+<body><!-- Start jQuery Notification Bar -->
+<div class="jquery-bar">
+    <span class="notification">
+        <p class="font-style"><strong>New Forum Available - <a href="http://terrium.net">Click here to start using the new forum - Terrium.net</a></strong></p> <p class="jquery-arrow down"><img src="Themes/terrium/img/up-arrow.png" alt="Click to Hide Notification" style="cursor:pointer;"></p>
+    </span>
+</div>
+<span class="downbar jquery-arrow"><img src="Themes/terrium/img/down-arrow.png" alt="Click to Show Notification" style="cursor:pointer;"></span>
+<!-- End jQuery Notification Bar -->
+
+<div id="wrapper">
+	<div id="subheader"><div style="width: 980px; margin: auto; margin-top: 120px;"><span style="font-size:4px; color:#6600FF;">I am TheCyberMan.</span>
+	<div id="uppertop">
+		<div class="floatright">August 07, 2015, 10:16:20 PM</div>
+		<script type="text/javascript" src="Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://terrium.cybuniv.net/index.php?action=login2" method="post" accept-charset="ISO-8859-1"  onsubmit="hashLoginPassword(this, '4dce265a84ae430d13ce9ab10d2f97e2');">
+			Welcome, <strong>Guest</strong>. Please <a href="index.php-action=login.html">login</a> or <a href="index.php-action=register.html">register</a>.&nbsp;
+			<input type="text" name="user" size="10"  />
+			<input type="password" name="passwrd" size="10"  />
+			<select name="cookielength">
+				<option value="60">1 Hour</option>
+				<option value="1440">1 Day</option>
+				<option value="10080">1 Week</option>
+				<option value="43200">1 Month</option>
+				<option value="-1" selected="selected">Forever</option>
+			</select>
+			<input type="submit" value="Login" />	
+					<input type="hidden" name="hash_passwrd" value="" />
+				</form>
+	</div>
+	<div id="top_section" style="clear: both; padding-top: 1em;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav"><li id="button_home" class="toplevel tabs_7">
+					<a class="active firstlevel" href="index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li><li id="button_about" class="toplevel tabs_7">
+					<a class="firstlevel" href="http://about">
+						<span class="firstlevel">About</span>
+					</a>
+				</li><li id="button_play" class="toplevel tabs_7">
+					<a class="firstlevel" href="http://play/info.php">
+						<span class="firstlevel">Play</span>
+					</a>
+				</li><li id="button_download" class="toplevel tabs_7">
+					<a class="firstlevel" href="http://download">
+						<span class="firstlevel">Download</span>
+					</a>
+				</li><li id="button_search" class="toplevel tabs_7">
+					<a class="firstlevel" href="index.php-action=search.html">
+						<span class="firstlevel">Search</span>
+					</a>
+				</li><li id="button_login" class="toplevel tabs_7">
+					<a class="firstlevel" href="index.php-action=login.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li><li id="button_register" class="toplevel tabs_7">
+					<a class="firstlevel" href="index.php-action=register.html">
+						<span class="last firstlevel">Register</span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 980px;margin: auto;">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="index.php.html"><span>Terrium — Free Multiplayer 3D Fun</span></a> &#187;
+			</li>
+			<li>
+				<a href="index.php.html#c1"><span>General Category</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="index.php-board=15.0.html"><span>Development</span></a>
+			</li>
+		</ul>
+	</div>
+	<a id="top"></a>
+		<div class="sectionheader">
+					<div class="cat_bar">
+						<h3 class="catbg">Child Boards
+						</h3>
+					</div></div><div class="category_table_list tablelist_boards"><div class="category_subs"><table class="table_list RoundedTable"><tbody class="seccontent ">
+				<tr id="board_5" class="windowbg2">
+					<td class="icon windowbg">
+						<a href="index.php-board=5.0.html">
+							<img src="../cybuniv.net/terrium/Themes/terrium/images/_carbon/PlanetSmall_Read.png" alt="No New Posts" title="No New Posts" />
+						</a>
+					</td>
+					<td class="info">
+						<a class="subject" href="index.php-board=5.0.html" name="b5">Bugs</a>
+
+						<p>Report any in-game bugs here.</p>
+					</td>
+					<td class="stats windowbg">
+						<p>22 Posts <br />
+						6 Topics
+						</p>
+					</td>
+					<td class="lastpost">
+						<p><strong>Last post</strong>  by <a href="index.php-action=profile-u=78.html">Lamp</a><br />
+						in <a href="index.php-topic=145.msg362.html#new" title="Spawn point in Ace's Canyon is too high">Spawn point in Ace's Can...</a><br />
+						on June 25, 2015, 08:52:15 PM
+						</p>
+					</td>
+				</tr></tbody></table></div></div>
+	<div class="tborder topic_table" id="messageindex">
+		<div class="sectionheader">
+					<div class="cat_bar">
+						<h3 class="catbg"><table cellspacing="0">
+				<thead>
+					<tr>
+					<th scope="col" class="first_th topiclist ab" colspan="2">&nbsp;</th>
+					<th scope="col" class="lefttext topiclist c"><a href="index.php-board=15.0-sort=subject.html">Subject</a> / <a href="index.php-board=15.0-sort=starter.html">Started by</a></th>
+					<th scope="col" class="topiclist d"><a href="index.php-board=15.0-sort=replies.html">Replies</a> / <a href="index.php-board=15.0-sort=views.html">Views <img src="../cybuniv.net/terrium/Themes/terrium/images/sort_down.gif" alt="" /></a></th>
+					<th scope="col" class="lefttext last_th topiclist e"><a href="index.php-board=15.0-sort=last_post.html">Last post</a></th>
+				</tr>
+			</thead>
+		</table>
+						</h3>
+					</div></div><div class="category_table_list tablelist_boards doubled"><div class="category_subs doubled"><table class="table_list RoundedTable"><tbody class="seccontent ">
+				<tr>
+					<td colspan="2" class="icon1 stickybg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post_sticky.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject stickybg2 topiclist c">
+						<div >
+							<strong><span id="msg_156"><a href="index.php-topic=95.0.html">Mars 2.5 Source</a></span></strong>
+							<p>Started by <a href="index.php-action=profile-u=18.html" title="View the profile of Ace">Ace</a>
+								<small id="pages156"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats stickybg topiclist d">
+						5 Replies
+						<br />
+						838 Views
+					</td>
+					<td class="lastpost stickybg2 topiclist e">
+						<a href="index.php-topic=95.0.html#msg375"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						June 28, 2015, 04:09:12 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_202"><a href="index.php-topic=102.0.html">Terrium Buggy Custom Models?</a></span>
+							<p>Started by <a href="index.php-action=profile-u=52.html" title="View the profile of Vectorv12">Vectorv12</a>
+								<small id="pages202"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						6 Replies
+						<br />
+						872 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=102.0.html#msg267"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						September 01, 2014, 12:27:03 AM<br />
+						by <a href="index.php-action=profile-u=18.html">Ace</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_220"><a href="index.php-topic=106.0.html">Regular</a></span>
+							<p>Started by <a href="index.php-action=profile-u=26.html" title="View the profile of Loki42">Loki42</a>
+								<small id="pages220"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						4 Replies
+						<br />
+						399 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=106.0.html#msg225"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						December 28, 2013, 12:17:49 PM<br />
+						by <a href="index.php-action=profile-u=18.html">Ace</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_poll.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_271"><a href="index.php-topic=115.0.html">Steering Wheel/Pilot Wheel</a></span>
+							<p>Started by <a href="index.php-action=profile-u=67.html" title="View the profile of {&#9824;PÅÇ&#9824;} Legendriver_Fios">{&#9824;PÅÇ&#9824;} Legendriver_Fios</a>
+								<small id="pages271"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						3 Replies
+						<br />
+						204 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=115.0.html#msg274"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						October 25, 2014, 07:57:46 PM<br />
+						by <a href="index.php-action=profile-u=67.html">{&#9824;PÅÇ&#9824;} Legendriver_Fios</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_276"><a href="index.php-topic=116.0.html">Mod Website</a></span>
+							<p>Started by <a href="index.php-action=profile-u=67.html" title="View the profile of {&#9824;PÅÇ&#9824;} Legendriver_Fios">{&#9824;PÅÇ&#9824;} Legendriver_Fios</a>
+								<small id="pages276"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						1 Replies
+						<br />
+						163 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=116.0.html#msg277"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						March 04, 2015, 02:55:25 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/question.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_286"><a href="index.php-topic=120.0.html">What happened to Server Settings?</a></span>
+							<p>Started by <a href="index.php-action=profile-u=78.html" title="View the profile of Lamp">Lamp</a>
+								<small id="pages286"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						3 Replies
+						<br />
+						120 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=120.0.html#msg302"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						May 12, 2015, 01:41:12 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_294"><a href="index.php-topic=122.0.html">Need any help?</a></span>
+							<p>Started by <a href="index.php-action=profile-u=59.html" title="View the profile of PointYbagelS">PointYbagelS</a>
+								<small id="pages294"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						2 Replies
+						<br />
+						68 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=122.0.html#msg299"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						May 12, 2015, 09:48:24 AM<br />
+						by <a href="index.php-action=profile-u=1.html">Eric</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/exclamation.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_308"><a href="index.php-topic=127.0.html">[Resolved] Worlds not working</a></span>
+							<p>Started by <a href="index.php-action=profile-u=78.html" title="View the profile of Lamp">Lamp</a>
+								<small id="pages308"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						4 Replies
+						<br />
+						47 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=127.0.html#msg316"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						June 15, 2015, 05:00:50 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_431"><a href="index.php-topic=163.0.html">Multiplayer is messed up (workaround)</a></span>
+							<p>Started by <a href="index.php-action=profile-u=78.html" title="View the profile of Lamp">Lamp</a>
+								<small id="pages431"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						1 Replies
+						<br />
+						42 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=163.0.html#msg444"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						July 09, 2015, 09:58:44 PM<br />
+						by <a href="index.php-action=profile-u=68.html">&#9824;(PAC)&#9824;firespeed</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/wink.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_380"><a href="index.php-topic=151.0.html">Things that need to change in Terrium [DEVELOPERS LOOK HERE!]</a></span>
+							<p>Started by <a href="index.php-action=profile-u=93.html" title="View the profile of [XAGA] AerowSpace">[XAGA] AerowSpace</a>
+								<small id="pages380"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						1 Replies
+						<br />
+						39 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=151.0.html#msg382"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						June 29, 2015, 10:13:31 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/xx.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_372"><a href="index.php-topic=147.0.html">Additional Gamemodes</a></span>
+							<p>Started by <a href="index.php-action=profile-u=67.html" title="View the profile of {&#9824;PÅÇ&#9824;} Legendriver_Fios">{&#9824;PÅÇ&#9824;} Legendriver_Fios</a>
+								<small id="pages372"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						1 Replies
+						<br />
+						38 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=147.0.html#msg373"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						June 26, 2015, 10:04:04 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/exclamation.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_326"><a href="index.php-topic=137.0.html">World boundaries?!</a></span>
+							<p>Started by <a href="index.php-action=profile-u=78.html" title="View the profile of Lamp">Lamp</a>
+								<small id="pages326"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						3 Replies
+						<br />
+						34 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=137.0.html#msg366"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						June 26, 2015, 02:18:55 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="icon1 windowbg topiclist ab">
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" />
+						<span style="width:10%">&nbsp;</span>
+						<img src="../cybuniv.net/terrium/Themes/terrium/images/post/question.gif" alt="" />
+					</td>
+					<td class="subject windowbg2 topiclist c">
+						<div >
+							<span id="msg_454"><a href="index.php-topic=166.0.html">Unity 5?</a></span>
+							<p>Started by <a href="index.php-action=profile-u=67.html" title="View the profile of {&#9824;PÅÇ&#9824;} Legendriver_Fios">{&#9824;PÅÇ&#9824;} Legendriver_Fios</a>
+								<small id="pages454"></small>
+							</p>
+						</div>
+					</td>
+					<td class="stats windowbg topiclist d">
+						2 Replies
+						<br />
+						30 Views
+					</td>
+					<td class="lastpost windowbg2 topiclist e">
+						<a href="index.php-topic=166.0.html#msg459"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/last_post.gif" alt="Last post" title="Last post" /></a>
+						August 06, 2015, 01:28:36 PM<br />
+						by <a href="index.php-action=profile-u=78.html">Lamp</a>
+					</td>
+				</tr></tbody></table></div></div></div>
+	<a id="bot"></a>
+		<div class="sectionheader openflipped">
+					<div class="cat_bar">
+						<h3 class="catbg"><div class="pagesection"><div class="pagelinks floatleft">Pages: [<strong>1</strong>] <a class="navPages" href="index.php-board=15.13-sort=views-desc.html">2</a> </div></div>
+						</h3>
+					</div></div><p class="floatright" id="message_index_jump_to">&nbsp;</p><BR/><BR/>
+		<div class="sectionheader">
+					<div class="cat_bar">
+						<h3 class="catbg">Derp2
+						</h3>
+					</div></div><div class="category_table_list tablelist_boards"><div class="category_subs"><table class="table_list RoundedTable"><tbody class="seccontent "><tr class="windowbg2 "><td class="windowbg " ROWSPAN="1"><p class="floatleft smalltext"><img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_post.gif" alt="" align="middle" /> Normal Topic<br /><img src="../cybuniv.net/terrium/Themes/terrium/images/topic/hot_post.gif" alt="" align="middle" /> Hot Topic (More than 15 replies)<br /><img src="../cybuniv.net/terrium/Themes/terrium/images/topic/veryhot_post.gif" alt="" align="middle" /> Very Hot Topic (More than 25 replies)</p><p class="smalltext"><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/quick_lock.gif" alt="" align="middle" /> Locked Topic<br /><img src="../cybuniv.net/terrium/Themes/terrium/images/icons/quick_sticky.gif" alt="" align="middle" /> Sticky Topic<br /><img src="../cybuniv.net/terrium/Themes/terrium/images/topic/normal_poll.gif" alt="" align="middle" /> Poll</p>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				if (typeof(window.XMLHttpRequest) != "undefined")
+					aJumpTo[aJumpTo.length] = new JumpTo({
+						sContainerId: "message_index_jump_to",
+						sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+						iCurBoardId: 15,
+						iCurBoardChildLevel: 0,
+						sCurBoardName: "Development",
+						sBoardChildLevelIndicator: "==",
+						sBoardPrefix: "=> ",
+						sCatSeparator: "-----------------------------",
+						sCatPrefix: "",
+						sGoButtonLabel: "Go!"
+					});
+			// ]]></script>
+			<br class="clear" /></td></tr></tbody></table></div></div>
+<script type="text/javascript" src="Themes/default/scripts/topic.js"></script>
+<script type="text/javascript"><!-- // --><![CDATA[
+
+	// Hide certain bits during topic edit.
+	hide_prefixes.push("lockicon", "stickyicon", "pages", "newicon");
+
+	// Use it to detect when we've stopped editing.
+	document.onclick = modify_topic_click;
+
+	var mouse_on_div;
+	function modify_topic_click()
+	{
+		if (in_edit_mode == 1 && mouse_on_div == 0)
+			modify_topic_save("4dce265a84ae430d13ce9ab10d2f97e2", "ffa6727af");
+	}
+
+	function modify_topic_keypress(oEvent)
+	{
+		if (typeof(oEvent.keyCode) != "undefined" && oEvent.keyCode == 13)
+		{
+			modify_topic_save("4dce265a84ae430d13ce9ab10d2f97e2", "ffa6727af");
+			if (typeof(oEvent.preventDefault) == "undefined")
+				oEvent.returnValue = false;
+			else
+				oEvent.preventDefault();
+		}
+	}
+
+	// For templating, shown when an inline edit is made.
+	function modify_topic_show_edit(subject)
+	{
+		// Just template the subject.
+		setInnerHTML(cur_subject_div, '<input type="text" name="subject" value="' + subject + '" size="60" style="width: 95%;" maxlength="80" onkeypress="modify_topic_keypress(event)" class="input_text" /><input type="hidden" name="topic" value="' + cur_topic_id + '" /><input type="hidden" name="msg" value="' + cur_msg_id.substr(4) + '" />');
+	}
+
+	// And the reverse for hiding it.
+	function modify_topic_hide_edit(subject)
+	{
+		// Re-template the subject!
+		setInnerHTML(cur_subject_div, '<a href="http://terrium.cybuniv.net/index.php?topic=' + cur_topic_id + '.0">' + subject + '<' +'/a>');
+	}
+
+// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 980px;margin: auto;">
+		<div class="floatright" style="text-align: right; font-size:10pt">Forum design by <a href="index.php-action=profile-u=1.html">TheCyberMan</a>, <a href="index.php-action=profile-u=7.html">Flynn</a>, and <a href="index.php-action=profile-u=3.html">Abister</a>.
+		<!-- <br />variant: carbon -->
+		<br/>
+		<span style="font-size:7px; color:#111111; float:left;">Oh my god flynn is coming</span>
+		</div>
+	
+			<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="index.php-action=credits.html" title="Simple Machines Forum" target="_blank" class="new_win">SMF 2.0.6</a> |
+ <a href="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2013</a>, <a href="http://www.simplemachines.org" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>
+			</span>| <span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://www.cybuniv.net">Copyright Cybuniv &copy; 2012-2015</a></span>
+	</div></div></div>
+</body></html>
